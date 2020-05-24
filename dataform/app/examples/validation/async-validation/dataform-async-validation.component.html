@@ -2,9 +2,9 @@
     <Label [text]="text" textWrap="true" margin="12"></Label>
     <ActivityIndicator row="1" id="myIndicator" [busy]="isBusy"></ActivityIndicator>
     <RadDataForm #myAsyncDataForm row="2" [source]="user"
-        validationMode="OnLostFocus" 
+        validationMode="OnLostFocus"
         commitMode="Manual"
-        (propertyValidate)="onPropertyValidate($event)" 
+        (propertyValidate)="onPropertyValidate($event)"
         (propertyValidated)="onPropertyValidated($event)">
         <TKEntityProperty tkDataFormProperty name="username" index="0"></TKEntityProperty>
         <TKEntityProperty tkDataFormProperty name="password" index="1">

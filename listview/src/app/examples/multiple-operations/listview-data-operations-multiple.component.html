@@ -5,8 +5,8 @@
         <Button width="33%" [text]="isSortingEnabled ? 'Disable sorting' : 'Enable sorting'" (tap)="toggleSorting()" ios:margin="5"></Button>
         <Button width="33%" [text]="isGroupingEnabled ? 'Disable grouping' : 'Enable grouping'" (tap)="toggleGrouping()" ios:margin="5"></Button>
     </StackLayout>
-    <RadListView selectionBehavior="Press" (itemSelected)="onItemSelected($event)" [items]="dataItems" row="1" #myListView 
-                    [sortingFunction]="mySortingFunc" 
+    <RadListView selectionBehavior="Press" (itemSelected)="onItemSelected($event)" [items]="dataItems" row="1" #myListView
+                    [sortingFunction]="mySortingFunc"
                     [filteringFunction]="myFilteringFunc"
                     [groupingFunction]="myGroupingFunc" >
         <ng-template tkListItemTemplate let-item="item">

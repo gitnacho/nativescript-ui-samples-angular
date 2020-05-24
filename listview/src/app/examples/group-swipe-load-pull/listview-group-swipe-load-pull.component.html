@@ -2,10 +2,10 @@
     <RadListView [items]="blogPosts" #myListView
         [groupingFunction]="groupByDay"
         pullToRefresh="true" (pullToRefreshInitiated)="onPullToRefreshInitiated($event)"
-        loadOnDemandMode="Manual" (loadMoreDataRequested)="onLoadMoreDataRequested($event)" 
+        loadOnDemandMode="Manual" (loadMoreDataRequested)="onLoadMoreDataRequested($event)"
         selectionBehavior="None" swipeActions="true"
-        (itemSwipeProgressStarted)="onItemSwipeProgressStarted($event)" 
-        (itemSwipeProgressChanged)="onItemSwipeProgressChanged($event)" 
+        (itemSwipeProgressStarted)="onItemSwipeProgressStarted($event)"
+        (itemSwipeProgressChanged)="onItemSwipeProgressChanged($event)"
         (itemSwipeProgressEnded)="onItemSwipeProgressEnded($event)">
         <ng-template tkListItemTemplate let-item="item">
             <StackLayout padding="16" orientation="vertical" background="#F0F6FF">

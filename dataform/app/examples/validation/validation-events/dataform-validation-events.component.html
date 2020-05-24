@@ -1,6 +1,6 @@
 <StackLayout tkExampleTitle tkToggleNavButton>
-    <RadDataForm #myValidationEventsDataForm [source]="registeringUser" 
-        (propertyValidate)="onPropertyValidate($event)" 
+    <RadDataForm #myValidationEventsDataForm [source]="registeringUser"
+        (propertyValidate)="onPropertyValidate($event)"
         (propertyValidated)="onPropertyValidated($event)">
         <TKEntityProperty tkDataFormProperty name="username" index="0">
             <TKNonEmptyValidator tkEntityPropertyValidators></TKNonEmptyValidator>

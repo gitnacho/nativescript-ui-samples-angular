@@ -1,11 +1,11 @@
 <GridLayout rows="*, auto" tkExampleTitle tkToggleNavButton>
     <RadListView selectionBehavior="LongPress"
                 [items]="dataItems"
-                #myListView 
+                #myListView
                 swipeActions="true"
-                [sortingFunction]="mySortingFunc" 
+                [sortingFunction]="mySortingFunc"
                 [filteringFunction]="myFilteringFunc"
-                [groupingFunction]="myGroupingFunc" 
+                [groupingFunction]="myGroupingFunc"
                 (itemSwipeProgressEnded)="onSwipeCellFinished($event)"
                 (itemSwipeProgressStarted)="onSwipeCellStarted($event)"
                 (itemSwipeProgressChanged)="onCellSwiping($event)"

@@ -4,7 +4,7 @@
     <RadListView [items]="dataItems" row="1" multipleSelection="true" selectionBehavior="Press" (itemSelected)="itemSelected($event)"
         (itemDeselected)="itemDeselected($event)">
         <!-- << angular-listview-howto-item-selection-events-html -->
-        
+
         <!-- >> angular-listview-howto-item-selection-template-html -->
         <ng-template tkListItemTemplate let-item="item">
             <StackLayout [backgroundColor]="item.selected ? 'red' : 'white'">
